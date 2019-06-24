@@ -1,0 +1,23 @@
+# Use this file to set specific behaviors for specific titles during experiment simulation
+# To help create predictable experiments with verifiable results for:
+# 1. Conversions
+# 2. Avg View Durations
+# 3. Completed Views (view portions)
+
+# views portion determines how much each title should be viewed in percent for completion test {title:percent}
+views_portion={'Traces of Red': 90, 'Blockers': 75, 'The Range Rider':97, 'The Double Life of Henry Phyfe': 79, 'The Arrival of Josie': 75,'The Simpsons': 100}
+
+#define search terms for experiments that promote titles based on user typed behavior
+search_terms=["Traces of Red","Traces of Red","Red","The tonight","tonight","talk", "blood","lethal","Traces of Red","drive","team","blazing","Traces","spock","american","pass","factor","deux","survivor","ghost","city","rogue","arrival","star","passenger","moana","deadpool","captain","India","Cambodia","China","Nepal","North Carolina","California","Annihilation","Panther","Blockers","Lover","Dia","Double","First","Fox", "Isle of Dogs","Leave","Trace","Life", "Death","Final","Rider","Catcher","Adams","Jason Bourne","Red","Bourne","Stranger Things", "Traces of","Toy Story",'Jurassic World', 'Star Wars: The Force Awakens', 'Avengers: Age of Ultron', 'Inside Out', 'Furious 7', 'Minions', 'The Hunger Games: Mockingjay - Part 2', 'The Martian', 'Cinderella (2015)', 'Of Red', 'Mission: Impossible - Rogue Nation', 'Pitch Perfect 2', 'Ant-Man', 'Home (2015)', 'Hotel Transylvania 2', 'Wild Orchid', 'Nuns on the Run', 'Narrow Margin', 'The Witches', 'Adventures of Milo and Otis (Re-issue)', 'The Two Jakes','The Mentalist','Stranger Things','The Magicians','The Good Doctor']
+
+#ommit query ids - select titles to convert to views but not sent in with a queryId
+ommit_queryids_titles=["Doctor Fausto", "Dr. Coppelius",'The X-Files',"Taxi Driver",'Beyond Belief: Fact Or Fiction',"Detective School Dropouts","The Good Doctor","Hawaii Stars: One Square Foot"]
+
+#DEFAULTS - These are defaults hard-coded into test script
+#convert at most 50% of non-zero hits into a CLICK-THROUGH CONVERSION
+#convert at most 40% of non-zero hits into a HARD CONVERSION for VIEWS
+#convert at most 10% of non-zero hits into a PURCHASE EVENTS
+
+#variation ids that we care about -- let see how many of each users belong to it
+#Experiment CatalogOnlySearch Experiment TIVO-NLU POP
+variationIds=["39e846eb-31e4-4f6a-8fe4-a6a7078f4928","bg-39e846eb-31e4-4f6a-8fe4-a6a7078f4928","cg-39e846eb-31e4-4f6a-8fe4-a6a7078f4928"]
